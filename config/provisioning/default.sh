@@ -24,6 +24,7 @@ NODES=(
     "https://github.com/kijai/ComfyUI-KJNodes"
     "https://github.com/BobJohnson24/ComfyUI-INT8-Fast"
     "https://github.com/sorryhyun/ComfyUI-Spectrum-KSampler"
+    "https://github.com/AdamNizol/ComfyUI-Anima-Enhancer"
 )
 
 CHECKPOINT_MODELS=(
