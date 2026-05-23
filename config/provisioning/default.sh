@@ -26,6 +26,7 @@ NODES=(
     "https://github.com/sorryhyun/ComfyUI-Spectrum-KSampler"
     "https://github.com/AdamNizol/ComfyUI-Anima-Enhancer"
     "https://github.com/newtextdoc1111/ComfyUI-Autocomplete-Plus"
+    "https://github.com/willmiao/ComfyUI-Lora-Manager"
 )
 
 CHECKPOINT_MODELS=(
