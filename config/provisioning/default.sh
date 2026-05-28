@@ -65,22 +65,22 @@ function provisioning_start() {
     provisioning_get_nodes
     provisioning_get_pip_packages
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/checkpoints" \
+        "/workspace/ComfyUI/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/diffusion_models" \
+        "/workspace/ComfyUI/models/diffusion_models" \
         "${DIFFUSION_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/text_encoder" \
+        "/workspace/ComfyUI/models/text_encoder" \
         "${TEXT_ENCODERS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/loras" \
+        "/workspace/ComfyUI/models/loras" \
         "${LORA_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/controlnet" \
+        "/workspace/ComfyUI/models/controlnet" \
         "${CONTROLNET_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/vae" \
+        "/workspace/ComfyUI/models/vae" \
         "${VAE_MODELS[@]}"
     provisioning_print_end
 }
@@ -108,7 +108,7 @@ function provisioning_get_pip_packages() {
 function provisioning_get_nodes() {
     for repo in "${NODES[@]}"; do
         dir="${repo##*/}"
-        path="/opt/ComfyUI/custom_nodes/${dir}"
+        path="/workspace/ComfyUI/custom_nodes/${dir}"
         requirements="${path}/requirements.txt"
         if [[ -d $path ]]; then
             if [[ ${AUTO_UPDATE,,} != "false" ]]; then
