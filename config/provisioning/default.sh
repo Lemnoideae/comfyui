@@ -22,6 +22,7 @@ NODES=(
     "https://github.com/ltdrdata/ComfyUI-Manager"
     "https://github.com/cubiq/ComfyUI_essentials"
     "https://github.com/kijai/ComfyUI-KJNodes"
+    "https://github.com/ruwwww/ComfyUI-Spectrum-sdxl"
     "https://github.com/BobJohnson24/ComfyUI-INT8-Fast"
     "https://github.com/sorryhyun/ComfyUI-Spectrum-KSampler"
     "https://github.com/AdamNizol/ComfyUI-Anima-Enhancer"
