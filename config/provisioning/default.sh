@@ -27,6 +27,7 @@ NODES=(
     "https://github.com/AdamNizol/ComfyUI-Anima-Enhancer"
     "https://github.com/newtextdoc1111/ComfyUI-Autocomplete-Plus"
     "https://github.com/willmiao/ComfyUI-Lora-Manager"
+    "https://github.com/granatta000/anima-artist-mixer"
 )
 
 CHECKPOINT_MODELS=(
