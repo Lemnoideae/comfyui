@@ -71,7 +71,7 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/diffusion_models" \
         "${DIFFUSION_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/text_encoder" \
+        "${WORKSPACE}/ComfyUI/models/text_encoders" \
         "${TEXT_ENCODERS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/loras" \
