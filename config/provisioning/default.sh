@@ -33,7 +33,7 @@ CHECKPOINT_MODELS=(
 )
 
 DIFFUSION_MODELS=(
-    "https://huggingface.co/Bedovyy/Anima-INT8/resolve/main/anima-base-v1.0-int8rowwise.safetensors"
+    "https://huggingface.co/circlestone-labs/Anima/resolve/main/split_files/diffusion_models/anima-base-v1.0.safetensors"
 )
 
 TEXT_ENCODERS=(
