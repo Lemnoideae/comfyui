@@ -6,7 +6,7 @@
 
 # Packages are installed after nodes so we can fix them...
 
-#DEFAULT_WORKFLOW="https://..."
+DEFAULT_WORKFLOW="https://drive.google.com/uc?export=download&id=1q8az1MLDep0j-UHebsMYCz0pMVtZADMY"
 
 APT_PACKAGES=(
     #"package-1"
@@ -132,7 +132,7 @@ function provisioning_get_nodes() {
 
 function provisioning_get_default_workflow() {
     if [[ -n $DEFAULT_WORKFLOW ]]; then
-        workflow_json=$(curl -s "$DEFAULT_WORKFLOW")
+        workflow_json=$(curl -sL "$DEFAULT_WORKFLOW" -o temp_workflow.json)
         if [[ -n $workflow_json ]]; then
             echo "export const defaultGraph = $workflow_json;" > /opt/ComfyUI/web/scripts/defaultGraph.js
         fi
