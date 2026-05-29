@@ -67,7 +67,7 @@ function provisioning_start() {
     provisioning_get_nodes
     provisioning_get_pip_packages
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/checkpoints" \
+        "${WORKSPACE}/ComfyUI/models/ckpt" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/diffusion_models" \
