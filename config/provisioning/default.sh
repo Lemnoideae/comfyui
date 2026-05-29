@@ -84,6 +84,7 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/vae" \
         "${VAE_MODELS[@]}"
+    provisioning_get_default_workflow
     provisioning_print_end
 }
 
